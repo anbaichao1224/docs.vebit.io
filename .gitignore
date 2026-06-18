@@ -1,0 +1,11 @@
+.idea/
+*.iml
+.codex/
+.claude/
+.gitlab-ci.yml
+target/
+**/target/
+docs
+*.log
+.DS_Store
+.docs/
