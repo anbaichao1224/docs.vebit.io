@@ -16934,7 +16934,7 @@ WebSocket 是 HTML5 一种新的协议（Protocol）。它实现了客户端与�
 
 ### 基本信息
 
-- url：<wss://wsapi.vebit.com/v1/ws/stream/public>。
+- url：<wss://ws.vebit.io/kline-api/ws>。
 
 > 返回示例
 
@@ -17056,7 +17056,7 @@ Kline interval 后缀
 
 #### 如何正确在本地维护一个 order book 副本
 
-1. 打开与 <wss://wsapi.vebit.com/v1/ws/stream/public> WebSocket 连接，并发送订阅增量深度频道。
+1. 打开与 <wss://ws.vebit.io/kline-api/ws> WebSocket 连接，并发送订阅增量深度频道。
 2. 开始缓存收到的 event。请记录您收到的第一个 event 的 last_update_id 值。
 3. 访问 <https://spotapi.vebit.com/spot/v1/market/orderbook?symbol=${symbol}> 获取深度快照。
 4. 如果快照中的 update_id 小于等于步骤 2 中的 last_update_id 值，请返回步骤 3。
