@@ -16938,7 +16938,7 @@ WebSocket is a new protocol in HTML5. It enables full-duplex communication betwe
 
 ### Basic Information
 
-- url：<wss://wsapi.vebit.com/v1/ws/stream/public>。
+- url：<wss://ws.vebit.io/kline-api/ws>。
 
 > Response example
 
@@ -17060,7 +17060,7 @@ Kline interval suffixes
 
 #### How to Properly Maintain a Local Order Book Copy
 
-1. Open a WebSocket connection to <wss://wsapi.vebit.com/v1/ws/stream/public> and subscribe to the incremental depth channel.
+1. Open a WebSocket connection to <wss://ws.vebit.io/kline-api/ws> and subscribe to the incremental depth channel.
 2. Begin buffering the received events. Record the last_update_id value from the first event you receive.
 3. Fetch the depth snapshot from <https://spotapi.vebit.com/spot/v1/market/orderbook?symbol=${symbol}>.
 4. If the update_id in the snapshot is less than or equal to the last_update_id value from step 2, return to step 3.
